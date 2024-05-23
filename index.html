@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmy Shoe Wear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Timmy Shoe Wear</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h2>Welcome to Timmy Shoe Wear</h2>
+            <p>Discover our amazing shoes and enjoy your shopping experience.</p>
+        </section>
+
+        <section id="products" class="container">
+            <h2>Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://img.kwcdn.com/product/enhanced_images/686229a97d2959f5e3de825b345042ab_enhanced.jpg?imageView2/2/w/800/q/70" alt="The Blades">
+                    <h3>The Blades</h3>
+                    <p>Description of The Blades</p>
+                    <p class="price" id="price1">$79.99</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/46/07/65/4607657e738bf3968b774b1fb6b6fed1.jpg" alt="One Size Socks">
+                    <h3>One Size Socks</h3>
+                    <p>Description of One Size Socks</p>
+                    <p class="price" id="price2">$12.99</p>
+                    <button onclick="addToCart(2)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/5706d89687e2a383d73cdd62b9f1b978.jpg?imageView2/2/w/800/q/70" alt="Speedy Shoe">
+                    <h3>Speedy Shoe</h3>
+                    <p>Description of Speedy Shoe</p>
+                    <p class="price" id="price3">$89.99</p>
+                    <button onclick="addToCart(3)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/6b26f38692900b53bfa32d52966f52eb.jpg?imageView2/2/w/800/q/70/format/webp" alt="Skate Shoe">
+                    <h3>Skate Shoe</h3>
+                    <p>Description of Skate Shoe</p>
+                    <p class="price" id="price4">$69.99</p>
+                    <button onclick="addToCart(4)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://urduraj.com/cdn/shop/files/O1CN01L5vsPi1zMeRNuAe27__2214778916700-0-cib.jpg?v=1694538150" alt="Hot Wheels Shoe">
+                    <h3>Hot Wheels Shoe</h3>
+                    <p>Description of Hot Wheels Shoe</p>
+                    <p class="price" id="price5">$59.99</p>
+                    <button onclick="addToCart(5)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/564x/dd/5e/6f/dd5e6f98778dfa4896a2c0b1f51e265c.jpg" alt="Pluffy Shoe">
+                    <h3>Pluffy Shoe</h3>
+                    <p>Description of Pluffy Shoe</p>
+                    <p class="price" id="price6">$29.99</p>
+                    <button onclick="addToCart(6)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <aside id="cart" class="container">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Timmy Shoe Wear. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
